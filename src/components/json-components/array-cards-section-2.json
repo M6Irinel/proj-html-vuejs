@@ -1,14 +1,5 @@
 [
     {
-        "price": "Free",
-        "secondPrice": "",
-        "description": "Personal Finance: Financial Security Thinking & Principles",
-        "lessons": 2,
-        "students": 207,
-        "img_link": "course-featured-image-01-480x298.jpg",
-        "alt": "course 02"
-    },
-    {
         "price": "$40.",
         "secondPrice": "00",
         "description": "Learning to Write as a Professional Author",
@@ -52,5 +43,14 @@
         "students": 51,
         "img_link": "course-featured-image-01-480x298.jpg",
         "alt": "stock featured image 01"
+    },
+    {
+        "price": "$59.",
+        "secondPrice": "00",
+        "description": "Introduction to Javascript for Beginners",
+        "lessons": 14,
+        "students": 76,
+        "img_link": "stock-full-hd-05-480x298.jpg",
+        "alt": "course 02"
     }
 ]

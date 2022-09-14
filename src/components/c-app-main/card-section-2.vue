@@ -4,7 +4,7 @@
             <img :src="require('../../assets/img/' + el.img_link)" :alt="el.alt">
         </div>
         <div class="right">
-            <div class="price"> {{el.price}}{{el.secondPrice}} </div>
+            <div class="price"> {{el.price}}<span>{{el.secondPrice}}</span> </div>
             <p> {{el.description}} </p>
             <div class="bottom d-flex">
                 <div>
@@ -33,6 +33,11 @@ export default {
 
 
 <style scoped lang="scss">
+@font-face {
+    font-family: Gilroy;
+    src: url('../../assets/fonts/Gilroy-ExtraBold.otf') format('opentype');
+}
+
 .myCard {
     display: flex;
     align-content: center;
@@ -60,8 +65,15 @@ export default {
 
         .price {
             color: #20ad96;
-            font-weight: bold;
+            font-weight: 800;
             font-size: 1.4rem;
+            font-family: Gilroy;
+
+            span {
+                font-size: 0.9rem;
+                font-family: Gilroy;
+                font-weight: 800;
+            }
         }
 
         p {
