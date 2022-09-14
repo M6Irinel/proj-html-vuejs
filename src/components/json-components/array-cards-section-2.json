@@ -1,0 +1,44 @@
+[
+    {
+        "price": "Free",
+        "secondPrice": "",
+        "description": "Personal Finance: Financial Security Thinking & Principles",
+        "lessons": 2,
+        "students": 207
+    },
+    {
+        "price": "$40.",
+        "secondPrice": "00",
+        "description": "Learning to Write as a Professional Author",
+        "lessons": 20,
+        "students": 63
+    },
+    {
+        "price": "Free",
+        "secondPrice": "",
+        "description": "Customer-centric Info-Tech Strategies",
+        "lessons": 24,
+        "students": 887
+    },
+    {
+        "price": "$19.",
+        "secondPrice": "00",
+        "description": "Open Programming Courses for Everyone: Python",
+        "lessons": 17,
+        "students": 63
+    },
+    {
+        "price": "$26.",
+        "secondPrice": "00",
+        "description": "Academic Listening and Note-taking",
+        "lessons": 14,
+        "students": 68
+    },
+    {
+        "price": "$39.",
+        "secondPrice": "00",
+        "description": "Master jQuery in a Short Period of Time",
+        "lessons": 6,
+        "students": 51
+    }
+]

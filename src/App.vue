@@ -25,10 +25,6 @@ export default {
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  overflow: scroll;
-}
-
 button {
   border: none;
   background: none;

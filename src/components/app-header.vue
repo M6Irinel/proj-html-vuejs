@@ -39,21 +39,30 @@ export default {
 
 
 <style scoped lang="scss">
-section {
-    box-shadow: 0 5px 3px #f6f6f6;
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #fff;
 
-    .myContainer {
-        gap: 5px;
-        align-items: center;
+    section {
+        box-shadow: 0 5px 3px #f6f6f6;
 
-        .circle-user {
-            font-size: 1.13rem;
-            padding: 0 17px 0 7px;
-            margin-left: -6px;
-            transition: color 0.2s ease-in-out;
+        .myContainer {
+            gap: 5px;
+            align-items: center;
 
-            &:hover {
-                color: #1fad96;
+            .circle-user {
+                font-size: 1.13rem;
+                padding: 0 17px 0 7px;
+                margin-left: -6px;
+                transition: color 0.2s ease-in-out;
+
+                &:hover {
+                    color: #1fad96;
+                }
             }
         }
     }
