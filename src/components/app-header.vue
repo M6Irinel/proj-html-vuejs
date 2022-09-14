@@ -3,7 +3,7 @@
         <section>
             <nav>
                 <div class="myContainer d-flex">
-                    <a class="me-auto" href="#"><img src="../assets/img/dark-logo.png" height="25" alt="dark-logo"></a>
+                    <a class="me-auto py-3" href="#"><img src="../assets/img/dark-logo.png" height="25" alt="dark-logo"></a>
 
                     <c-button-header v-for="(el, i) in arrayHeaderButtons" :key="i" :headerButtonName="el" />
 

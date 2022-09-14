@@ -18,25 +18,8 @@
                     <main-img-header-anim />
                 </div>
 
-                <div class="bottom d-flex justify-content-around align-items-center mt-5 mb-4">
-                    <div>
-                        <img src="../../assets/img/client-logo-01.png" alt="client logo 01">
-                    </div>
-                    <div>
-                        <img src="../../assets/img/client-logo-02.png" alt="client logo 02">
-                    </div>
-                    <div>
-                        <img src="../../assets/img/client-logo-03.png" alt="client logo 03">
-                    </div>
-                    <div>
-                        <img src="../../assets/img/client-logo-04.png" alt="client logo 04">
-                    </div>
-                    <div>
-                        <img src="../../assets/img/client-logo-05.png" alt="client logo 05">
-                    </div>
-                    <div>
-                        <img src="../../assets/img/client-logo-06.png" alt="client logo 06">
-                    </div>
+                <div class="bottom d-flex justify-content-around align-items-center mt-4 mb-5 pb-2">
+                    <main-header-bottom v-for="(el, i) in arrayMainHeaderBottom" :key="i" :el="el" />
                 </div>
             </div>
         </section>
@@ -47,11 +30,19 @@
 <script>
 import mainButton from './main-button.vue';
 import mainImgHeaderAnim from './main-img-header-anim.vue';
+import mainHeaderBottom from './main-header-bottom.vue';
+import arrayMainHeaderBottom from '../json-components/array-main-header-bottom.json';
 
 export default {
     name: 'mainHeader',
 
-    components: { mainButton, mainImgHeaderAnim },
+    components: { mainButton, mainImgHeaderAnim, mainHeaderBottom },
+
+    data () {
+        return {
+            arrayMainHeaderBottom
+        }
+    },
 }
 </script>
 
@@ -85,29 +76,55 @@ export default {
         }
 
         a {
-            display: block;
             text-decoration: none;
             font-weight: 500;
+            letter-spacing: -1px;
 
             span {
                 color: #1fad96;
                 font-weight: bold;
+                position: relative;
+
+                path {
+                    color: #1fad96;
+                }
+
+                &::after,
+                &::before {
+                    content: '';
+                    display: block;
+                    height: 1px;
+                    position: absolute;
+                    bottom: 0;
+                    transition: width 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                }
+
+                &::after {
+                    background-color: #1fad96;
+                    left: 0;
+                    width: 0;
+                }
+
+                &::before {
+                    background-color: #dadada;
+                    right: 0;
+                    width: 100%;
+                    transition-delay: 0.3s;
+                }
             }
 
             &:hover {
                 color: #9694ab;
+
+                span::after {
+                    width: 100%;
+                    transition-delay: 0.6s;
+                }
+
+                span::before {
+                    width: 0;
+                }
             }
-        }
-    }
-}
-
-.bottom {
-    div {
-        opacity: 0.5;
-        transition: opacity 0.2s ease-out;
-
-        &:hover {
-            opacity: 1;
         }
     }
 }

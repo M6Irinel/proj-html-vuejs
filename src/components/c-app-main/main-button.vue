@@ -1,17 +1,19 @@
 <template>
-    <button>
-        <div class="d-flex justify-content-center align-items-center gap-3" v-if="icon === 0">
-            <font-awesome-icon icon="fa-solid fa-download" />
-            <p> {{contentButton}} </p>
-        </div>
-        <div class="d-flex justify-content-center align-items-center gap-2" v-if="icon === 1">
-            <p> {{contentButton}} </p>
-            <font-awesome-icon icon="fa-solid fa-arrow-right-long" />
-        </div>
-        <div class="d-flex justify-content-center align-items-center" v-if="icon === 2">
-            <p> {{contentButton}} </p>
-        </div>
-    </button>
+    <div>
+        <button>
+            <div class="d-flex justify-content-center align-items-center gap-3" v-if="icon === 0">
+                <font-awesome-icon icon="fa-solid fa-download" />
+                <p> {{contentButton}} </p>
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-2" v-if="icon === 1">
+                <p> {{contentButton}} </p>
+                <font-awesome-icon icon="fa-solid fa-arrow-right-long" />
+            </div>
+            <div class="d-flex justify-content-center align-items-center" v-if="icon === 2">
+                <p> {{contentButton}} </p>
+            </div>
+        </button>
+    </div>
 </template>
 
 
