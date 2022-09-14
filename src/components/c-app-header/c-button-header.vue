@@ -20,18 +20,17 @@ export default {
 
 
 <style scoped lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 button {
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 0.95rem;
     color: #313131;
     transition: color 0.2s ease-in-out;
-    padding: 30px 15px;
+    padding: 30px 16.5px;
 
     .fa-chevron-down {
         font-size: 0.6rem;
+        width: 8px;
     }
 
     &:hover {

@@ -23,8 +23,6 @@ export default {
 
 
 <style scoped lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
 .input-and-button {
     position: relative;
     border-radius: 5px;
@@ -32,7 +30,6 @@ export default {
     padding: 1px;
 
     input {
-        font-family: 'Poppins', sans-serif;
         padding: 12px 55px 12px 23px;
         border: none;
         background-color: #f6f3f5;

@@ -1,8 +1,8 @@
 <template>
     <header>
         <section>
-            <nav class="container">
-                <div class="contentHeader d-flex">
+            <nav>
+                <div class="myContainer d-flex">
                     <a class="me-auto" href="#"><img src="../assets/img/dark-logo.png" height="25" alt="dark-logo"></a>
 
                     <c-button-header v-for="(el, i) in arrayHeaderButtons" :key="i" :headerButtonName="el" />
@@ -20,8 +20,8 @@
 
 
 <script>
-import cButtonHeader from './vue-rest-components/c-button-header.vue';
-import inputAndButton from './vue-rest-components/input-and-button.vue';
+import cButtonHeader from './c-app-header/c-button-header.vue';
+import inputAndButton from './c-app-header/input-and-button.vue';
 import arrayHeaderButtons from './json-components/array-header-buttons.json';
 
 export default {
@@ -42,14 +42,14 @@ export default {
 section {
     box-shadow: 0 5px 3px #f6f6f6;
 
-    .contentHeader {
-        padding: 0 65px;
+    .myContainer {
         gap: 5px;
         align-items: center;
 
         .circle-user {
             font-size: 1.13rem;
-            padding: 0 15px 0 5px;
+            padding: 0 17px 0 7px;
+            margin-left: -6px;
             transition: color 0.2s ease-in-out;
 
             &:hover {
