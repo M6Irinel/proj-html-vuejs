@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <app-header/>
-    <app-main/>
-    <app-footer/>
+    <app-header />
+    <app-main />
+    <app-footer />
   </div>
 </template>
 
@@ -19,5 +19,12 @@ export default {
 </script>
 
 <style lang="scss">
+body {
+  overflow: scroll;
+}
 
+button {
+  border: none;
+  background: none;
+}
 </style>

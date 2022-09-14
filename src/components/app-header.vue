@@ -1,21 +1,19 @@
 <template>
     <header>
         <section>
-            <div class="container">
-                <div class="d-flex py-3">
-                    <a href="#"><img src="../assets/img/dark-logo.png" height="25" alt="dark-logo"></a>
+            <nav class="container">
+                <div class="contentHeader d-flex">
+                    <a class="me-auto" href="#"><img src="../assets/img/dark-logo.png" height="25" alt="dark-logo"></a>
 
-                    <div class="ms-auto">
-                        <c-button-header v-for="(el, i) in arrayHeaderButtons" :key="i" :headerButtonName="el" />
-                    </div>
+                    <c-button-header v-for="(el, i) in arrayHeaderButtons" :key="i" :headerButtonName="el" />
 
-                    <button>
+                    <button class="circle-user">
                         <font-awesome-icon icon="fa-regular fa-circle-user" />
                     </button>
 
                     <input-and-button :placeholder="'Search...'" :icon="true" :classStyle="'search'" />
                 </div>
-            </div>
+            </nav>
         </section>
     </header>
 </template>
@@ -40,6 +38,24 @@ export default {
 </script>
 
 
-<style lang="scss">
+<style scoped lang="scss">
+section {
+    box-shadow: 0 5px 3px #f6f6f6;
 
+    .contentHeader {
+        padding: 0 65px;
+        gap: 5px;
+        align-items: center;
+
+        .circle-user {
+            font-size: 1.13rem;
+            padding: 0 15px 0 5px;
+            transition: color 0.2s ease-in-out;
+
+            &:hover {
+                color: #1fad96;
+            }
+        }
+    }
+}
 </style>
