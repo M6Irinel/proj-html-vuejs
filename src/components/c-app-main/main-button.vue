@@ -34,6 +34,7 @@ button {
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.2s ease-in-out;
+    margin-bottom: 25px;
     
     div {
         height: 52px;
@@ -47,7 +48,7 @@ button {
     }
     
     &:hover {
-        background-color: #48495f;
+        background-color: #3f3a64;
     }
 }
 </style>
