@@ -36,6 +36,8 @@ export default {
 
 
 <style scoped lang="scss">
+@import '../scss/color-palet.scss';
+
 .pos-absolute-0 {
     position: absolute;
     top: 0;
@@ -54,8 +56,8 @@ export default {
 
         .top_left {
             position: absolute;
-            top: 50px;
-            left: -10px;
+            top: 170px;
+            left: -90px;
 
             div {
                 margin-top: 18px;
@@ -64,8 +66,8 @@ export default {
 
         .bottom_right {
             position: absolute;
-            bottom: 50px;
-            right: 0;
+            bottom: 5px;
+            right: 80px;
         }
     }
 
@@ -80,23 +82,22 @@ export default {
     }
 
     .front {
-        display: flex;
-        justify-content: space-between;
+        position: relative;
 
         .front-left {
-            align-self: flex-end;
-            margin-bottom: 100px;
-            margin-left: -50px;
+            position: absolute;
+            top: 395px;
+            left: -38px;
             width: 65px;
             aspect-ratio: 1;
             border-radius: 50%;
-            border: 8px solid #ecc5ab;
+            border: 8px solid #ebc3a9;
         }
 
         .front-right {
-            align-self: center;
-            margin-bottom: 100px;
-            margin-right: -20px;
+            position: absolute;
+            top: 130px;
+            right: -120px;
         }
     }
 }

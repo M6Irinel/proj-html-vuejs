@@ -20,7 +20,7 @@
                     <h3>Companionship</h3>
                     <p class="second">Sneek peek into what has in store for you on our online teaching and mentoring
                         portal. Seek for some hidden hints of early-bird rewards as well.</p>
-                    <text-animation-underline-vue :textA="''" :textSpan="'Download free guidebook'" />
+                    <text-animation-underline :textA="''" :textSpan="'Download free guidebook'" />
                 </div>
             </div>
         </div>
@@ -31,13 +31,13 @@
 <script>
 import ArrayCardsSection3 from '../json-components/array-cards-section-3.json';
 import cardSection3 from './card-section-3.vue';
-import textAnimationUnderlineVue from './text-animation-underline.vue';
+import textAnimationUnderline from './text-animation-underline.vue';
 import mainImgSection3Anim from './main-img-section-3-anim.vue';
 
 export default {
     name: 'mainSection3',
 
-    components: { cardSection3, textAnimationUnderlineVue, mainImgSection3Anim },
+    components: { cardSection3, textAnimationUnderline, mainImgSection3Anim },
 
     data () {
         return {
@@ -49,22 +49,24 @@ export default {
 
 
 <style scoped lang="scss">
+@import '../scss/color-palet.scss';
+
 section {
     padding: 100px 0 170px;
 
     .top {
         p {
-            color: #9694ab;
+            color: $myVioletLight;
             letter-spacing: 1px;
         }
 
         h2 {
-            color: #3f3a64;
+            color: $myVioletDark;
             margin-bottom: 70px;
 
             span {
                 font-weight: normal;
-                color: #20ad96;
+                color: $myGreenDark;
             }
         }
     }
@@ -98,31 +100,31 @@ section {
             flex-grow: 1;
 
             .first {
-                color: #9694ab;
+                color: $myVioletLight;
                 margin-top: 170px;
                 font-weight: 500;
                 font-size: 1.05rem;
 
                 span {
-                    color: #3f3a64;
+                    color: $myVioletDark;
                     font-weight: bold;
                 }
             }
 
             h2 {
-                color: #3f3a64;
+                color: $myVioletDark;
                 font-weight: bold;
                 font-size: 2.85rem;
             }
 
             h3 {
                 font-size: 2.7rem;
-                color: #20ad96;
+                color: $myGreenDark;
                 font-weight: 400;
             }
 
             .second {
-                color: #6f6f6f;
+                color: $myGrayMiddle;
                 max-width: 400px;
                 padding: 30px 0 50px;
             }

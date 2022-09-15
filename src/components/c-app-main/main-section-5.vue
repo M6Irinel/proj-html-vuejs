@@ -17,7 +17,7 @@ import arrayCardsSection5 from '../json-components/array-cards-section-5.json';
 export default {
     name: 'mainSection5',
 
-    data() {
+    data () {
         return {
             arrayCardsSection5
         }
@@ -27,28 +27,32 @@ export default {
 
 
 <style scoped lang="scss">
+@import '../scss/color-palet.scss';
+
 .myCards {
-    
+
     .myCard {
         flex-basis: 0;
         flex-grow: 1;
-        border-left: 1px solid #f5f1ed;
-        padding: 99px 0 70px;
+        border-left: 1px solid $bgCol3;
+        padding: 99px 0 99px;
 
         h4 {
-            color: #3f3a64;
-            padding: 0 50px 10px;
+            color: $myVioletDark;
+            padding: 0 60px 10px;
+            font-weight: 600;
+            font-size: 1.4rem;
         }
 
         .middle {
-            color: #20ad96;
+            color: $myGreenDark;
             font-weight: bold;
             font-size: 4rem;
             font-family: Gilroy;
         }
 
         .bottom {
-            color: #9694ab;
+            color: $myVioletLight;
             letter-spacing: 1px;
             font-weight: bold;
             font-size: 1.05rem;
@@ -56,7 +60,7 @@ export default {
     }
 
     .myCard:last-of-type {
-        border-right: 1px solid #f5f1ed;
+        border-right: 1px solid $bgCol3;
     }
-} 
+}
 </style>

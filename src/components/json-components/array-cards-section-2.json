@@ -4,7 +4,7 @@
         "secondPrice": "00",
         "description": "Learning to Write as a Professional Author",
         "lessons": 20,
-        "students": 63,
+        "students": 50,
         "img_link": "course-02-480x298.jpg",
         "alt": "course 02"
     },
@@ -13,7 +13,7 @@
         "secondPrice": "",
         "description": "Customer-centric Info-Tech Strategies",
         "lessons": 24,
-        "students": 887,
+        "students": 769,
         "img_link": "stock-full-hd-03-480x298.jpg",
         "alt": "stock full hd 03"
     },
@@ -22,7 +22,7 @@
         "secondPrice": "00",
         "description": "Open Programming Courses for Everyone: Python",
         "lessons": 17,
-        "students": 63,
+        "students": 62,
         "img_link": "stock-full-hd-04-480x298.jpg",
         "alt": "stock full hd 04"
     },
@@ -31,7 +31,7 @@
         "secondPrice": "00",
         "description": "Academic Listening and Note-taking",
         "lessons": 14,
-        "students": 68,
+        "students": 67,
         "img_link": "stock-full-hd-06-480x298.jpg",
         "alt": "stock full hd 06"
     },

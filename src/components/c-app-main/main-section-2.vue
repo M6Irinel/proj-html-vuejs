@@ -5,7 +5,7 @@
                 <p>STIMULATED TO LEARN?</p>
                 <h2>Featured Online Courses</h2>
             </div>
-            <div class="myCards d-flex gap-4">
+            <div class="myCards d-flex">
                 <card-section-2 v-for="(el, i) in arrayCardsSection2" :key="i" :el="el" />
             </div>
             <div class="d-flex justify-content-center mt-5">
@@ -36,23 +36,26 @@ export default {
 
 
 <style scoped lang="scss">
+@import '../scss/color-palet.scss';
+
 section {
-    background-color: #f5f7fa;
+    background-color: $bgCol1;
     padding: 100px 0 90px;
 
     p {
-        color: #9694ab;
+        color: $myVioletLight;
         letter-spacing: 1px;
     }
 
     h2 {
-        color: #3f3a64;
+        color: $myVioletDark;
         font-weight: bold;
         margin-bottom: 60px;
     }
 
     .myCards {
         flex-wrap: wrap;
+        gap: 30px;
     }
 }
 </style>

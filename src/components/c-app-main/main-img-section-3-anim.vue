@@ -13,12 +13,10 @@
         </div>
         <div class="middle pos-absolute-0">
             <div class="img_front">
-                <img src="../../assets/img/home-2-popup-video-poster.jpg"
-                alt="about me profile">
+                <img src="../../assets/img/home-2-popup-video-poster.jpg" alt="about me profile">
             </div>
             <div class="icon">
-                <img src="../../assets/img/icon-youtube-play.png"
-                alt="icon youtube">
+                <img src="../../assets/img/icon-youtube-play.png" alt="icon youtube">
             </div>
         </div>
         <div class="front pos-absolute-0">
@@ -39,6 +37,8 @@ export default {
 
 
 <style scoped lang="scss">
+@import '../scss/color-palet.scss';
+
 .pos-absolute-0 {
     position: absolute;
     top: 0;
@@ -61,7 +61,7 @@ export default {
         width: 80%;
         height: 80%;
         z-index: -20;
-        box-shadow: 90px 130px 40px #a7a3a3;
+        box-shadow: 90px 130px 40px $myGrayMiddle;
     }
 
     .back {
@@ -70,7 +70,7 @@ export default {
         .top_left {
             position: absolute;
             top: 150px;
-            left: -100px;
+            left: -104px;
 
             div {
                 margin-top: 18px;
@@ -116,8 +116,8 @@ export default {
 
         .front-left {
             position: absolute;
-            top: 70px;
-            left: 730px;
+            top: 75px;
+            left: 715px;
             width: 70px;
             aspect-ratio: 1;
             border-radius: 50%;

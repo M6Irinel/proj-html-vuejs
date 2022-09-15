@@ -25,7 +25,7 @@
                         <img src="../../assets/img/maxcoach-shape-01.png" alt="maxcoach shape 01">
                     </div>
                 </div>
-                <div class="text-center mt-4 pt-3">
+                <div class="button text-center mt-4 pt-3">
                     <main-button-vue :icon="2" :contentButton="'Get started now'" />
                 </div>
             </div>
@@ -59,8 +59,17 @@ export default {
 
 
 <style scoped lang="scss">
+@import '../scss/color-palet.scss';
+
+h4,
+h5,
+.button {
+    position: relative;
+    z-index: 10;
+}
+
 section {
-    background-color: #f8f8f8;
+    background-color: $bgCol2;
     padding: 110px 0 80px;
 
     .container2 {
@@ -68,17 +77,18 @@ section {
 
         .top {
             p {
-                color: #9694ab;
+                color: $myVioletLight;
                 letter-spacing: 1px;
             }
 
             h2 {
-                color: #3f3a64;
+                color: $myVioletDark;
                 font-weight: bold;
                 margin-bottom: 60px;
+                font-size: 1.9rem;
 
                 span {
-                    color: #20ad96;
+                    color: $myGreenDark;
                     font-weight: 400;
                 }
             }
@@ -89,25 +99,25 @@ section {
         }
 
         .itemsImg {
-            background-color: #3f3a64;
+            background-color: $myVioletDark;
             border-radius: 50%;
             aspect-ratio: 1;
             width: 12px;
         }
 
         h5 {
-            color: #3f3a64;
+            color: $myVioletDark;
             font-weight: bold;
             font-size: 1.35rem;
 
             span {
-                color: #20ad96;
+                color: $myGreenDark;
                 font-weight: 400;
             }
         }
 
         h4 {
-            color: #3f3a64;
+            color: $myVioletDark;
             font-weight: bold;
             font-size: 2rem;
         }
@@ -137,7 +147,7 @@ section {
                     top: 120px;
                     left: 0;
                 }
-                
+
                 .fiftyCircle {
                     position: absolute;
                     right: 0;

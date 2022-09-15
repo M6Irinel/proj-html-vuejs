@@ -47,8 +47,10 @@ export default {
 
 
 <style scoped lang="scss">
+@import '../scss/color-palet.scss';
+
 section {
-    background-color: #f5f1ed;
+    background-color: $bgCol3;
     padding: 127px 0 100px;
 
     .section6 {
@@ -61,24 +63,24 @@ section {
 
         .left {
             .first {
-                color: #9694ab;
+                color: $myVioletLight;
                 margin-top: 20px;
             }
 
             h2 {
-                color: #3f3a64;
+                color: $myVioletDark;
                 font-weight: bold;
                 margin-bottom: 40px;
 
                 span {
-                    color: #20ad96;
+                    color: $myGreenDark;
                     font-weight: 400;
                 }
             }
 
             .cicle {
                 & > div {
-                    color: #3f3a64;
+                    color: $myVioletDark;
                     font-weight: bold;
                     font-size: 0.9rem;
                     display: flex;
@@ -89,7 +91,7 @@ section {
 
                     &:hover {
                         p {
-                            color: #20ad96;
+                            color: $myGreenDark;
                         }
 
                         .icons {
@@ -128,7 +130,7 @@ section {
 
                         .iconCol {
                             left: -120%;
-                            color: #20ad96;
+                            color: $myGreenDark;
                             opacity: 0;
                         }
 

@@ -60,15 +60,16 @@ export default {
 
 
 <style scoped lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700&display=swap');
+@import './scss/color-palet.scss';
 
 section {
-    background-color: #f8f8f8;
+    background-color: $bgCol2;
     padding: 69px 0 50px;
 }
 
 h4 {
     margin-bottom: 20px;
+    color: $myBlack;
 }
 
 p {
@@ -78,7 +79,7 @@ p {
 
 p,
 a {
-    color: #6f6f6f;
+    color: $myGrayDark;
 }
 
 a {
@@ -86,7 +87,7 @@ a {
     transition: color 0.2s ease-in-out;
 
     &:hover {
-        color: #20ad96;
+        color: $myGreenDark;
     }
 }
 
@@ -109,7 +110,7 @@ address {
 
             &:hover {
                 opacity: 1;
-                color: #20ad96;
+                color: $myGreenDark;
             }
         }
     }
@@ -136,6 +137,6 @@ address {
 }
 
 .endPageWeb {
-    color: #9c9c9c;
+    color: $myGrayMiddle;
 }
 </style>

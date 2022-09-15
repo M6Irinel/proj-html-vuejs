@@ -20,11 +20,12 @@ export default {
 
 
 <style scoped lang="scss">
+@import '../scss/color-palet.scss';
 
 button {
     font-weight: 500;
     font-size: 0.95rem;
-    color: #313131;
+    color: $myGrayDark;
     transition: color 0.2s ease-in-out;
     padding: 30px 16.5px;
 
@@ -34,7 +35,7 @@ button {
     }
 
     &:hover {
-        color: #1fad96;
+        color: $myGreenDark;
 
         & > .myBut::after {
             left: 0;
@@ -52,7 +53,7 @@ button {
             position: absolute;
             bottom: 0;
             transition: width 0.5s ease-out;
-            background-color: #1fad96;
+            background-color: $myGreenDark;
             left: 100%;
             width: 0;
             height: 1px;

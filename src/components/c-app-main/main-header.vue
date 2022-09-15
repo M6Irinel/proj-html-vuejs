@@ -47,12 +47,15 @@ export default {
 
 
 <style scoped lang="scss">
+@import '../scss/color-palet.scss';
+
 * {
-    color: #9694ab;
+    color: $myVioletLight;
 }
 
 .top {
     padding-top: 70px;
+    align-items: center;
 
     .left {
         flex-basis: 0;
@@ -63,7 +66,7 @@ export default {
         }
 
         h1 {
-            color: #3f3a64;
+            color: $myVioletDark;
             font-weight: bold;
             margin-bottom: 25px;
             font-size: 2.8rem;

@@ -23,6 +23,8 @@ export default {
 
 
 <style scoped lang="scss">
+@import '../scss/color-palet.scss';
+
 .input-and-button {
     position: relative;
     border-radius: 5px;
@@ -31,12 +33,13 @@ export default {
 
     input {
         border: none;
-        background-color: #f6f3f5;
+        background-color: $myGrayLight;
         border-radius: 5px;
         font-size: 0.88rem;
+        font-family: Roboto, sans-serif;
 
         &:focus {
-            color: #4f4f4f;
+            color: $myGrayDark;
             outline: 1px solid #1fad96;
         }
     }
@@ -49,27 +52,28 @@ export default {
         bottom: 0;
         transition: all 0.2s ease-in-out;
     }
+
     .headerbutton {
-        color: #1fad96;
+        color: $myGreenDark;
         aspect-ratio: 1;
 
         &:hover {
-            background-color: #1fad96;
+            background-color: $myGreenDark;
             color: #fff;
         }
     }
-    
+
     .classButton {
         padding-left: 36px;
         padding-right: 36px;
         color: #fff;
         font-weight: bold;
-        background-color: #1fad96;
+        background-color: $myGreenDark;
         font-size: 0.9rem;
         letter-spacing: -1px;
 
         &:hover {
-            background-color: #3e3c65;
+            background-color: $myVioletDark;
         }
     }
 }

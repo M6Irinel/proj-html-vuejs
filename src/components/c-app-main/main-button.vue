@@ -30,27 +30,29 @@ export default {
 
 
 <style scoped lang="scss">
+@import '../scss/color-palet.scss';
+
 button {
-    background-color: #1fad96;
+    background-color: $myGreenDark;
     color: #fff;
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.2s ease-in-out;
     margin-bottom: 25px;
-    
+
     div {
         height: 52px;
         width: 260px;
-        
+
         p {
             padding: 0;
             margin: 0;
             font-size: 0.8rem;
         }
     }
-    
+
     &:hover {
-        background-color: #3f3a64;
+        background-color: $myVioletDark;
     }
 }
 </style>

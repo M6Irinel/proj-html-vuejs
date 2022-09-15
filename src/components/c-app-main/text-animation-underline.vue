@@ -18,6 +18,8 @@ export default {
 
 
 <style scoped lang="scss">
+@import '../scss/color-palet.scss';
+
 a {
     text-decoration: none;
     font-weight: 500;
@@ -25,7 +27,7 @@ a {
     font-size: 0.9rem;
 
     span {
-        color: #1fad96;
+        color: $myGreenDark;
         font-weight: bold;
         position: relative;
 
@@ -35,7 +37,7 @@ a {
         }
 
         path {
-            color: #1fad96;
+            color: $myGreenDark;
         }
 
         &::after,
@@ -49,13 +51,13 @@ a {
         }
 
         &::after {
-            background-color: #1fad96;
+            background-color: $myGreenDark;
             left: 0;
             width: 0;
         }
 
         &::before {
-            background-color: #dadada;
+            background-color: $myGrayMiddle;
             right: 0;
             width: 100%;
             transition-delay: 0.3s;
@@ -63,7 +65,7 @@ a {
     }
 
     &:hover {
-        color: #9694ab;
+        color: $myVioletLight;
 
         span::after {
             width: 100%;

@@ -28,21 +28,25 @@ export default {
 
 
 <style scoped lang="scss">
+@import '../scss/color-palet.scss';
+
 .myCard {
     flex-basis: 0;
     flex-grow: 1;
     padding: 50px;
     background-color: #fff;
+    box-shadow: 0 0 15px $myGrayLight;
+    border-radius: 5px;
 
     h4 {
-        color: #3f3a64;
+        color: $myVioletDark;
         font-size: 1.16rem;
         font-weight: 600;
         line-height: 2rem;
     }
-    
+
     p {
-        color: #575757;
+        color: $myGrayDark;
         margin-bottom: 35px;
         line-height: 1.9rem;
         font-weight: 500;
@@ -67,13 +71,13 @@ export default {
             justify-content: center;
 
             h5 {
-                color: #3f3a64;
+                color: $myVioletDark;
                 font-size: 0.95rem;
                 font-weight: 700;
             }
-    
+
             p {
-                color: #8d8d8d;
+                color: $myGrayMiddle;
                 font-size: 0.86rem;
                 margin: 0;
             }

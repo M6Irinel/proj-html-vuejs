@@ -35,6 +35,8 @@ export default {
 
 
 <style scoped lang="scss">
+@import '../scss/color-palet.scss';
+
 section {
     padding: 90px 0 100px;
 
@@ -45,18 +47,18 @@ section {
     .content {
 
         h2 {
-            color: #3f3a64;
+            color: $myVioletDark;
             font-weight: bold;
             margin-bottom: 27px;
 
             span {
-                color: #20ad96;
+                color: $myGreenDark;
                 font-weight: 400;
             }
         }
 
         p {
-            color: #6f6f6f;
+            color: $myGrayMiddle;
             font-weight: 500;
             margin-bottom: 52px;
         }
@@ -66,7 +68,10 @@ section {
         }
     }
 
-    .imgs, .circle, .fiftyCircle, .rectangular {
+    .imgs,
+    .circle,
+    .fiftyCircle,
+    .rectangular {
         position: absolute;
     }
 
@@ -87,13 +92,13 @@ section {
         }
 
         .fiftyCircle {
-            right: -160px;
-            top: 50%;
+            right: 20px;
+            top: 100px;
         }
 
         .rectangular {
-            top: -20px;
-            right: -160px;
+            top: -40px;
+            right: 20px;
         }
     }
 }

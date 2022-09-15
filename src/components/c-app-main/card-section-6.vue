@@ -1,15 +1,15 @@
 <template>
     <div class="myCard">
         <div class="img">
-            <img :src="el.img_link" :alt="el.alt">
+            <img :src="require(`../../assets/img/${el.img_link}`)" :alt="el.alt">
         </div>
         <div class="bottom">
-            <div class="first">BUSINESS</div>
+            <div class="first">ARTIST</div>
             <p> {{el.title}} </p>
             <div class="down d-flex gap-5">
                 <div class="d-flex gap-3 align-items-center">
                     <font-awesome-icon icon="fa-regular fa-calendar" />
-                    Dec 28, 2020
+                    May 15, 2020
                 </div>
                 <div class="d-flex gap-3 align-items-center">
                     <font-awesome-icon icon="fa-regular fa-eye" />
@@ -33,6 +33,8 @@ export default {
 
 
 <style scoped lang="scss">
+@import '../scss/color-palet.scss';
+
 .myCard {
     background-color: #fff;
     border-radius: 5px;
@@ -47,11 +49,10 @@ export default {
     }
 
     .img {
-        max-height: 250px;
+        height: 250px;
+        overflow: hidden;
 
         img {
-            object-fit: cover;
-            object-position: center;
             width: 100%;
             height: 100%;
             transition: transform 1.2s ease-out;
@@ -63,35 +64,40 @@ export default {
 
         .first {
             margin-bottom: 8px;
-            color: #9694ab;
+            color: $myVioletLight;
             font-weight: 500;
             letter-spacing: 1px;
             transition: color 0.2s ease-in-out;
             display: inline-block;
             cursor: pointer;
-            
+
             &:hover {
-                color: #20ad96;
+                color: $myGreenDark;
             }
         }
-        
+
         p {
             margin-bottom: 25px;
             font-weight: bold;
             line-height: 30px;
             font-size: 1.12rem;
-            color: #3f3a64;
+            color: $myVioletDark;
             transition: color 0.2s ease-in-out;
             cursor: pointer;
-            
+
             &:hover {
-                color: #20ad96;
+                color: $myGreenDark;
             }
         }
 
         .down {
-            color: #6f6f6f;
+            color: $myGrayMiddle;
             font-size: 0.9rem;
+
+            div {
+                font-family: Rubik;
+                font-weight: 400;
+            }
         }
     }
 }

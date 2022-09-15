@@ -33,6 +33,8 @@ export default {
 
 
 <style scoped lang="scss">
+@import '../scss/color-palet.scss';
+
 .myCard {
     display: flex;
     align-content: center;
@@ -41,7 +43,7 @@ export default {
     padding: 20px;
     gap: 30px;
     border-radius: 5px;
-    transition: background-color 0.1s ease-in-out;
+    transition: all 0.25s ease-in-out;
 
     .left {
         cursor: pointer;
@@ -59,7 +61,7 @@ export default {
         padding-top: 15px;
 
         .price {
-            color: #20ad96;
+            color: $myGreenDark;
             font-weight: 800;
             font-size: 1.4rem;
             font-family: Gilroy;
@@ -72,19 +74,19 @@ export default {
         }
 
         p {
-            color: #3f3a64;
+            color: $myVioletDark;
             cursor: pointer;
             font-size: 1.2rem;
             font-weight: 600;
             transition: color 0.2s ease-out;
 
             &:hover {
-                color: #20ad96;
+                color: $myGrayDark;
             }
         }
 
         .bottom {
-            color: #9694ab;
+            color: $myVioletLight;
             font-size: 0.85rem;
             gap: 20px;
             font-weight: 500;
@@ -98,7 +100,7 @@ export default {
 
     &:hover {
         background-color: #fff;
-        box-shadow: 0 0 15px #ececec;
+        box-shadow: 0 0 30px #e0e8ee;
     }
 }
 </style>

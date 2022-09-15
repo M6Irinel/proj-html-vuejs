@@ -3,7 +3,8 @@
         <section>
             <nav>
                 <div class="myContainer d-flex">
-                    <a class="me-auto py-3" href="#"><img src="../assets/img/dark-logo.png" height="25" alt="dark-logo"></a>
+                    <a class="me-auto py-3" href="#"><img src="../assets/img/dark-logo.png" height="25"
+                            alt="dark-logo"></a>
 
                     <c-button-header v-for="(el, i) in arrayHeaderButtons" :key="i" :headerButtonName="el" />
 
@@ -39,6 +40,8 @@ export default {
 
 
 <style scoped lang="scss">
+@import './scss/color-palet.scss';
+
 header {
     position: sticky;
     top: 0;
@@ -48,7 +51,7 @@ header {
     background-color: #fff;
 
     section {
-        box-shadow: 0 5px 3px #f6f6f6;
+        box-shadow: 0 5px 3px #ecebeb;
 
         .myContainer {
             gap: 5px;
@@ -60,9 +63,10 @@ header {
                 padding: 0 17px 0 7px;
                 margin-left: -6px;
                 transition: color 0.2s ease-in-out;
+                color: $myGrayDark;
 
                 &:hover {
-                    color: #1fad96;
+                    color: $myGreenDark;
                 }
             }
         }
