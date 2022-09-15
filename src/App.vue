@@ -21,6 +21,11 @@ export default {
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+@font-face {
+    font-family: Gilroy;
+    src: url('./assets/fonts/Gilroy-ExtraBold.otf') format('opentype');
+}
+
 * {
   font-family: 'Poppins', sans-serif;
 }

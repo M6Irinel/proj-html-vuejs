@@ -33,11 +33,6 @@ export default {
 
 
 <style scoped lang="scss">
-@font-face {
-    font-family: Gilroy;
-    src: url('../../assets/fonts/Gilroy-ExtraBold.otf') format('opentype');
-}
-
 .myCard {
     display: flex;
     align-content: center;
