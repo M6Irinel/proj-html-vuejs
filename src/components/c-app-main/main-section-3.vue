@@ -50,7 +50,7 @@ export default {
 
 <style scoped lang="scss">
 section {
-    padding: 100px 0 140px;
+    padding: 100px 0 170px;
 
     .top {
         p {

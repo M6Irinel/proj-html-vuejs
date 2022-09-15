@@ -1,5 +1,6 @@
 <template>
     <div class="right">
+        <div class="bbackShadow"></div>
         <div class="back pos-absolute-0">
             <div class="top_left">
                 <div>
@@ -52,6 +53,17 @@ export default {
     position: relative;
     aspect-ratio: 1;
 
+    .bbackShadow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 80%;
+        z-index: -20;
+        box-shadow: 90px 130px 40px #a7a3a3;
+    }
+
     .back {
         z-index: 1;
 
@@ -82,6 +94,7 @@ export default {
         width: 670px;
         margin-top: 115px;
         border-radius: 5px;
+        cursor: pointer;
 
         &:hover {
             .img_front {
