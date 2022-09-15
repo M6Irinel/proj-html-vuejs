@@ -39,4 +39,14 @@ button {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.inputHeader {
+  max-width: 227px !important;
+  padding: 15px 55px 15px 23px;
+}
+
+.inputMain {
+  width: 100%;
+  padding: 15px 160px 15px 23px;
+}
 </style>

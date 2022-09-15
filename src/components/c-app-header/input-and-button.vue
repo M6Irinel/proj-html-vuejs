@@ -1,10 +1,10 @@
 <template>
-    <div :class="classStyle" class="input-and-button">
-        <input type="text" :placeholder="placeholder">
-        <button v-if="icon">
+    <div class="input-and-button">
+        <input :class="classInput" type="text" :placeholder="placeholder">
+        <button class="headerbutton" v-if="icon">
             <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
         </button>
-        <button v-else>Subcribe</button>
+        <button class="classButton" v-else>Subscribe</button>
     </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
     props: {
         placeholder: String,
         icon: Boolean,
-        classStyle: String
+        classInput: String
     }
 }
 </script>
@@ -30,11 +30,9 @@ export default {
     padding: 1px;
 
     input {
-        padding: 12px 55px 12px 23px;
         border: none;
         background-color: #f6f3f5;
         border-radius: 5px;
-        max-width: 225px;
         font-size: 0.88rem;
 
         &:focus {
@@ -43,18 +41,35 @@ export default {
         }
     }
 
-    button {
+    .headerbutton,
+    .classButton {
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
-        color: #1fad96;
         transition: all 0.2s ease-in-out;
+    }
+    .headerbutton {
+        color: #1fad96;
         aspect-ratio: 1;
 
         &:hover {
             background-color: #1fad96;
             color: #fff;
+        }
+    }
+    
+    .classButton {
+        padding-left: 36px;
+        padding-right: 36px;
+        color: #fff;
+        font-weight: bold;
+        background-color: #1fad96;
+        font-size: 0.9rem;
+        letter-spacing: -1px;
+
+        &:hover {
+            background-color: #3e3c65;
         }
     }
 }

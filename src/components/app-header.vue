@@ -11,7 +11,7 @@
                         <font-awesome-icon icon="fa-regular fa-circle-user" />
                     </button>
 
-                    <input-and-button :placeholder="'Search...'" :icon="true" :classStyle="'search'" />
+                    <input-and-button :placeholder="'Search...'" :icon="true" :classInput="'inputHeader'" />
                 </div>
             </nav>
         </section>
@@ -53,6 +53,7 @@ header {
         .myContainer {
             gap: 5px;
             align-items: center;
+            padding: 0 15px;
 
             .circle-user {
                 font-size: 1.13rem;
