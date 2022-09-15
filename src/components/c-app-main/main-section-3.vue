@@ -122,7 +122,7 @@ section {
             }
 
             .second {
-                color: #575757;
+                color: #6f6f6f;
                 max-width: 400px;
                 padding: 30px 0 50px;
             }
