@@ -66,12 +66,14 @@ export default {
             color: #3f3a64;
             font-weight: bold;
             margin-bottom: 25px;
+            font-size: 2.8rem;
         }
 
         p {
             font-size: 1.05rem;
             font-weight: 500;
             margin-bottom: 40px;
+            line-height: 2rem;
         }
     }
 }

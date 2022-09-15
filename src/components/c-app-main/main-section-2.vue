@@ -42,6 +42,7 @@ section {
 
     p {
         color: #9694ab;
+        letter-spacing: 1px;
     }
 
     h2 {
