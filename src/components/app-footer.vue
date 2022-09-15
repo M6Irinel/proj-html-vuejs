@@ -1,6 +1,10 @@
 <template>
     <footer>
-        footer
+        <section>
+            <div class="myContainer">
+                footer
+            </div>
+        </section>
     </footer>
 </template>
 

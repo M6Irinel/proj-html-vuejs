@@ -9,6 +9,15 @@
                     <input-and-button :icon="false" :placeholder="'Enter your email'" :classInput="'inputMain'" />
                 </div>
             </div>
+            <div class="imgs">
+                <div class="circle"></div>
+                <div class="fiftyCircle">
+                    <img src="../../assets/img/maxcoach-shape-02.png" alt="maxcoach shape 02">
+                </div>
+                <div class="rectangular">
+                    <img src="../../assets/img/maxcoach-shape-09.png" alt="maxcoach shape 09">
+                </div>
+            </div>
         </div>
     </section>
 </template>
@@ -28,6 +37,10 @@ export default {
 <style scoped lang="scss">
 section {
     padding: 90px 0 100px;
+
+    .myContainer {
+        position: relative;
+    }
 
     .content {
 
@@ -50,6 +63,37 @@ section {
 
         .inputSection7 {
             width: 570px;
+        }
+    }
+
+    .imgs, .circle, .fiftyCircle, .rectangular {
+        position: absolute;
+    }
+
+    .imgs {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -5;
+
+        .circle {
+            top: 50%;
+            left: -100px;
+            width: 60px;
+            aspect-ratio: 1;
+            border: 7px solid #8fd6ca;
+            border-radius: 50%;
+        }
+
+        .fiftyCircle {
+            right: -160px;
+            top: 50%;
+        }
+
+        .rectangular {
+            top: -20px;
+            right: -160px;
         }
     }
 }
