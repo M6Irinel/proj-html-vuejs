@@ -35,8 +35,11 @@ export default {
         border: none;
         background-color: $myGrayLight;
         border-radius: 5px;
-        font-size: 0.88rem;
-        font-family: Roboto, sans-serif;
+        font-size: 1rem;
+        height: 50px;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        letter-spacing: -1px;
+        font-weight: 300;
 
         &:focus {
             color: $myGrayDark;

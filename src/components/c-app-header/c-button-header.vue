@@ -27,11 +27,14 @@ button {
     font-size: 0.95rem;
     color: $myGrayDark;
     transition: color 0.2s ease-in-out;
-    padding: 30px 16.5px;
+    padding: 30px 15px;
 
     .fa-chevron-down {
         font-size: 0.6rem;
         width: 8px;
+        position: relative;
+        bottom: 3px;
+        margin-left: 2px;
     }
 
     &:hover {
